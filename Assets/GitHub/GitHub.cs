@@ -7,9 +7,9 @@ namespace Sinoze.Util
 {
 	public class GitHub : EditorWindow 
 	{
-		static void ShowWindow()
+		static GitHub ShowWindow()
 		{
-			EditorWindow.GetWindow<GitHub>(true);
+			return EditorWindow.GetWindow<GitHub>(true);
 		}
 
 		[MenuItem ("GitHub/Patch Release...", false, 0)]
@@ -21,7 +21,8 @@ namespace Sinoze.Util
 		#region PUBLIC API
 		public static void PatchRelease(string owner, string repo, string id, string access_token)
 		{
-			ShowWindow();
+			var window = ShowWindow();
+			window.DoPatch(owner, repo, id, access_token);
 		}
 		#endregion
 
