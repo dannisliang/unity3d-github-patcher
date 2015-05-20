@@ -1,0 +1,3 @@
+[submodule "Assets/Modules/UnityZip"]
+	path = Assets/Modules/UnityZip
+	url = https://github.com/sinoze/UnityZip.git

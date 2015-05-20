@@ -86,7 +86,7 @@ namespace Sinoze.Util
 					fs.Close();
 					fs.Dispose();
 					
-					UniZip.Unzip(path, dir);
+					ZipUtil.Unzip(path, dir);
 					
 					
 					var getdirs = Directory.GetDirectories(dir, "Assets", SearchOption.AllDirectories);
