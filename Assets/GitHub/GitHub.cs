@@ -6,7 +6,7 @@ using UnityEditor;
 namespace Sinoze.Util
 {
 	public class GitHub : EditorWindow 
-	{
+	{ 
 		static GitHub ShowWindow()
 		{
 			return EditorWindow.GetWindow<GitHub>(true);
